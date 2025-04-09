@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from embedder import prepare_embeddings, search_assessments
+from app.embedder  import prepare_embeddings, search_assessments
 import json
 
 # Load assessment data
