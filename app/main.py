@@ -4,7 +4,7 @@ from app.embedder  import prepare_embeddings, search_assessments
 import json
 
 # Load assessment data
-with open("data/assessments.json", "r") as f:
+with open("app/data/assessments.json", "r") as f:
     assessments = json.load(f)
 
 assessments = prepare_embeddings(assessments)  # Embed once on startup
